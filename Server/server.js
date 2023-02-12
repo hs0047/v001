@@ -1,8 +1,8 @@
 const https = require('http');
 
 const server = https.createServer((req, res) => {
-    req.statusCode(200);
-    req.setHeader('Content-Type', 'Text/Plain');
+    req.statusCode = 200;
+    // req.setHeader('Content-Type', 'Text/Plain');
     res.end("Namaste")
 })
 
